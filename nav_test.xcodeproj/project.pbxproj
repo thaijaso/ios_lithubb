@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D611BA78E7800C85862 /* Dispensary.swift */; };
+		042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D631BA7A27900C85862 /* DispensaryCell.swift */; };
 		0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2961BA6CC3B00061792 /* AppDelegate.swift */; };
 		0455E2991BA6CC3B00061792 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */; };
 		0455E29C1BA6CC3B00061792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0455E29A1BA6CC3B00061792 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		042C2D611BA78E7800C85862 /* Dispensary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispensary.swift; sourceTree = "<group>"; };
+		042C2D631BA7A27900C85862 /* DispensaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispensaryCell.swift; sourceTree = "<group>"; };
 		0455E2931BA6CC3B00061792 /* nav_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nav_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0455E2961BA6CC3B00061792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				0455E29D1BA6CC3B00061792 /* Assets.xcassets */,
 				0455E29A1BA6CC3B00061792 /* Main.storyboard */,
+				042C2D631BA7A27900C85862 /* DispensaryCell.swift */,
 				042C2D611BA78E7800C85862 /* Dispensary.swift */,
 				0455E29F1BA6CC3B00061792 /* LaunchScreen.storyboard */,
 				0455E2961BA6CC3B00061792 /* AppDelegate.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */,
+				042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */,
 				0455E2991BA6CC3B00061792 /* RegistrationViewController.swift in Sources */,
 				0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */,
 				042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */,
