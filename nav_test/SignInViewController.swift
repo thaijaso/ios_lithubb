@@ -10,17 +10,17 @@ import UIKit
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
     
-
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passTextField: UITextField!
 
-    @IBOutlet weak var passwordTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
         //        delegate this viewcontroller so we can press return to dismiss keyboard.
         self.emailTextField.delegate = self
-        self.passwordTextField.delegate = self
+        self.passTextField.delegate = self
         
     }
     
@@ -51,7 +51,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
             request.HTTPMethod = "POST"
             // Get all info from textfields to send to node server
-            let bodyData = "email=\(emailTextField.text!)&password=\(passwordTextField.text!)"
+            let bodyData = "email=\(emailTextField.text!)&password=\(passTextField.text!)"
             request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
                 (response, data, error) in

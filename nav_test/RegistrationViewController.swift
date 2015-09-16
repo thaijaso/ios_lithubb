@@ -17,6 +17,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate, NSURLSe
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var confirmPassTextField: UITextField!
+
     
     
     override func viewDidLoad() {
