@@ -55,7 +55,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
                 (response, data, error) in
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
+                //print(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
             }
         }
     }

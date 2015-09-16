@@ -68,11 +68,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate, NSURLSe
                 let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
                 request.HTTPMethod = "POST"
                 // Get all info from textfields to send to node server
-                let bodyData = "firstNme=\(firstNameTextField.text!)&lastName=\(lastNameTextField.text!)&email=\(emailTextField.text!)&password=\(passTextField.text!)&confirm=\(confirmPassTextField.text!)"
+                let bodyData = "firstName=\(firstNameTextField.text!)&lastName=\(lastNameTextField.text!)&email=\(emailTextField.text!)&password=\(passTextField.text!)&confirm=\(confirmPassTextField.text!)"
                 request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
                 NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
                     (response, data, error) in
-                    print(NSString(data: data!, encoding: NSUTF8StringEncoding))
+                    //print(NSString(data: data!, encoding: NSUTF8StringEncoding))
 
                 }
             }
