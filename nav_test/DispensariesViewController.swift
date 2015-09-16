@@ -20,14 +20,21 @@ class DispensariesViewController: UITableViewController {
                     let object = dispensary as! NSDictionary
                     let id = object["id"] as! Int
                     let name = object["name"] as! String
-                    let address = object["address"] as! String
+                    let address = "6429 S Orchard St"
                     let latitude = object["latitude"] as! Double
                     let longitude = object["longitude"] as! Double
-                    let phone = object["phone"] as! String
-                    let email = object["email"] as! String
-                    let online_reservation = object["online_reservation"] as! Int
-                    let phone_reservation = object["phone_reservation"] as! Int
-                    dispensaries.append(Dispensary(id: id, name: name, address: address, latitude: latitude, longitude: longitude, phone: phone, email: email, online_reservation: online_reservation, phone_reservation: phone_reservation))
+                    var phone: String?
+                    print(object["phone"])
+                    if object["phone"] is NSNull {
+                        phone = "123-123-1234"
+                    } else {
+                        phone = object["phone"] as? String
+                        
+                    }
+                    let email = "test@test.com"
+                    let online_reservation = 1
+                    let phone_reservation = 1
+                    dispensaries.append(Dispensary(id: id, name: name, address: address, latitude: latitude, longitude: longitude, phone: phone!, email: email, online_reservation: online_reservation, phone_reservation: phone_reservation))
                 }
             }
         }
