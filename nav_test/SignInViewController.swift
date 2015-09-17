@@ -47,7 +47,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     //signs in user and goes to orders view
     @IBAction func signInButtonPressed(sender: UIButton) {
-        if let urlToReq = NSURL(string: "http://192.168.1.137:7000/loginUser") {
+        if let urlToReq = NSURL(string: "http://192.168.1.140:7000/loginUser") {
             let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
             request.HTTPMethod = "POST"
             // Get all info from textfields to send to node server
