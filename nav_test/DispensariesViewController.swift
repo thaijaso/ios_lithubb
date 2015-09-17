@@ -17,17 +17,17 @@ class DispensariesViewController: UITableViewController {
     }
     
     func requestDispensaries() {
-        if let urlToReq = NSURL(string: "http://192.168.1.139   :7000/dispensaries") {
+        if let urlToReq = NSURL(string: "http://192.168.1.140:7000/dispensaries") {
             if let data = NSData(contentsOfURL: urlToReq) {
                 let arrOfDispensaries = parseJSON(data)
                 for dispensary in arrOfDispensaries! {
                     let object = dispensary as! NSDictionary
                     let id = object["id"] as! Int
-                    let name = object["Tradename"] as! String
-                    let address = object["Street Address"] as! String
-                    let phone = object["DayPhone"] as! String
-                    let city = object["City"] as! String
-                    let state = object["State"] as! String
+                    let name = object["name"] as! String
+                    let address = object["address"] as! String
+                    let phone = object["phone"] as! String
+                    let city = object["city"] as! String
+                    let state = object["state"] as! String
                     //let latitude = object["latitude"] as! Double
                     //let longitude = object["longitude"] as! Double
                     dispensaries.append(Dispensary(id: id, name: name, address: address, city: city, state: state, phone: phone))

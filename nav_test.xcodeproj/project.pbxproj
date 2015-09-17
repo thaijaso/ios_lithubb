@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040363161BAA092D00740C3A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040363151BAA092D00740C3A /* MenuViewController.swift */; };
+		040363181BAA0A1B00740C3A /* StrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040363171BAA0A1B00740C3A /* StrainCell.swift */; };
 		042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D611BA78E7800C85862 /* Dispensary.swift */; };
 		042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D631BA7A27900C85862 /* DispensaryCell.swift */; };
 		0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2961BA6CC3B00061792 /* AppDelegate.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0340E69312202D1ABDFF8D28 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		040363151BAA092D00740C3A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		040363171BAA0A1B00740C3A /* StrainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrainCell.swift; sourceTree = "<group>"; };
 		042C2D611BA78E7800C85862 /* Dispensary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispensary.swift; sourceTree = "<group>"; };
 		042C2D631BA7A27900C85862 /* DispensaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispensaryCell.swift; sourceTree = "<group>"; };
 		0455E2931BA6CC3B00061792 /* nav_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nav_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,14 +120,16 @@
 			children = (
 				0455E29D1BA6CC3B00061792 /* Assets.xcassets */,
 				0455E29A1BA6CC3B00061792 /* Main.storyboard */,
-				042C2D631BA7A27900C85862 /* DispensaryCell.swift */,
-				042C2D611BA78E7800C85862 /* Dispensary.swift */,
 				0455E29F1BA6CC3B00061792 /* LaunchScreen.storyboard */,
 				0455E2961BA6CC3B00061792 /* AppDelegate.swift */,
-				048FDE891BA9170100E777FB /* MapViewController.swift */,
-				0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */,
 				04A60EDB1BA7185C0068715E /* SignInViewController.swift */,
+				0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */,
+				048FDE891BA9170100E777FB /* MapViewController.swift */,
 				04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */,
+				040363151BAA092D00740C3A /* MenuViewController.swift */,
+				040363171BAA0A1B00740C3A /* StrainCell.swift */,
+				042C2D631BA7A27900C85862 /* DispensaryCell.swift */,
+				042C2D611BA78E7800C85862 /* Dispensary.swift */,
 				0455E2A21BA6CC3B00061792 /* Info.plist */,
 			);
 			path = nav_test;
@@ -331,10 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040363161BAA092D00740C3A /* MenuViewController.swift in Sources */,
 				04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */,
 				042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */,
 				0455E2991BA6CC3B00061792 /* RegistrationViewController.swift in Sources */,
 				0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */,
+				040363181BAA0A1B00740C3A /* StrainCell.swift in Sources */,
 				042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */,
 				04A60EDC1BA7185C0068715E /* SignInViewController.swift in Sources */,
 				048FDE8A1BA9170100E777FB /* MapViewController.swift in Sources */,
