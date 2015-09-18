@@ -11,8 +11,8 @@ import GoogleMaps
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    var allProducts = [AnyObject]()
-    var productsFilter = [AnyObject]()
+    var menu = [Menu]()
+    var menuFiltered = [Menu]()
     var myMarker : GMSMarker!
     
     @IBOutlet weak var productTableView: UITableView!
@@ -20,7 +20,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     @IBAction func filterButtonPressed(sender: UIButton) {
-        productsFilter = [AnyObject]()
+        menuFiltered = [Menu]()
         if sender.tag == 1 {
             filter("Indica")
         } else if sender.tag == 2{
@@ -40,11 +40,25 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let dispensaryID = String(myMarker.userData)
         if let urlToReq = NSURL(string: "http://192.168.1.140:7000/getMenu/" + dispensaryID) {
             if let data = NSData(contentsOfURL: urlToReq) {
-                let arrOfProducts = parseJSON(data)
-                for product in arrOfProducts! {
-                    let productDict = product as! NSDictionary
-                    print(productDict["strain_name"])
-                    allProducts.append(productDict)
+                let arrOfProducts = JSON(data: data)
+                dispensaryName.title = arrOfProducts[0]["name"].string
+                for var i = 0; i < arrOfProducts.count; ++i {
+                    let dispensaryName = arrOfProducts[i]["name"].string
+                    let strainID = arrOfProducts[i]["strain_id"].int
+                    let strainName = arrOfProducts[i]["strain_name"].string
+                    let vendorID = arrOfProducts[i]["vendor_id"].int
+                    let priceGram = arrOfProducts[i]["price_gram"].double
+                    let priceEigth = arrOfProducts[i]["price_eigth"].double
+                    let priceQuarter = arrOfProducts[i]["price_quarter"].double
+                    let priceHalf = arrOfProducts[i]["price_half"].double
+                    let priceOz = arrOfProducts[i]["price_oz"].double
+                    let category = arrOfProducts[i]["category"].string
+                    let symbol = arrOfProducts[i]["symbol"].string
+                    let description = arrOfProducts[i]["description"].string
+                    let fullImage = arrOfProducts[i]["fullsize_img1"].string
+                    
+                    let dispensaryMenu = Menu(dispensaryName: dispensaryName!, strainID: strainID!, vendorID: vendorID!, priceGram: priceGram!, priceEigth: priceEigth!, priceQuarter: priceQuarter!, priceHalf: priceHalf!, priceOz: priceOz!, strainName: strainName!, category: category!, description: description!)
+                    menu.append(dispensaryMenu)
                 }
             }
         }
@@ -70,28 +84,28 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if productsFilter.count == 0 {
-            return allProducts.count
-        }else{
-            return productsFilter.count
+        if menuFiltered.count == 0 {
+            return menu.count
+        } else {
+            return menuFiltered.count
         }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = productTableView.dequeueReusableCellWithIdentifier("StrainCell") as? StrainCell
         print("after cell\(cell)")
-        if productsFilter.count != 0 {
-            cell!.nameLabel?.text = productsFilter[indexPath.row]["strain_name"] as? String
+        if menuFiltered.count != 0 {
+            cell!.nameLabel?.text = menuFiltered[indexPath.row].strainName as? String
         } else {
-            cell!.nameLabel?.text = allProducts[indexPath.row]["strain_name"] as? String
+            cell!.nameLabel?.text = menu[indexPath.row].strainName as? String
         }
         return cell!
     }
     
     func filter(filter: String){
-        for product in allProducts {
-            if product["category"] as! String == filter {
-                productsFilter.append(product)
+        for product in menu {
+            if product.category as! String == filter {
+                menuFiltered.append(product)
             }
         }
     }
@@ -99,4 +113,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("ShowProduct", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
+    
+    
+    
 }

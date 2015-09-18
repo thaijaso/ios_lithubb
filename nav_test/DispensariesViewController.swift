@@ -26,8 +26,8 @@ class DispensariesViewController: UITableViewController {
                     let name = object["name"] as! String
                     let address = object["address"] as! String
                     let phone = object["phone"] as! String
-                    let city = object["city"] as! String
-                    let state = object["state"] as! String
+                    let city = object["City"] as! String
+                    let state = object["State"] as! String
                     //let latitude = object["latitude"] as! Double
                     //let longitude = object["longitude"] as! Double
                     dispensaries.append(Dispensary(id: id, name: name, address: address, city: city, state: state, phone: phone))

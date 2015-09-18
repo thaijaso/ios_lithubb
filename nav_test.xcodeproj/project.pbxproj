@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		040363161BAA092D00740C3A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040363151BAA092D00740C3A /* MenuViewController.swift */; };
 		040363181BAA0A1B00740C3A /* StrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040363171BAA0A1B00740C3A /* StrainCell.swift */; };
+		04276F951BAB5FFC00B605FD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276F941BAB5FFC00B605FD /* SwiftyJSON.swift */; };
+		04276F971BAB67C400B605FD /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276F961BAB67C400B605FD /* Menu.swift */; };
+		04276F991BABD00900B605FD /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276F981BABD00900B605FD /* ProductViewController.swift */; };
+		04276F9B1BABD54B00B605FD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276F9A1BABD54B00B605FD /* MapViewController.swift */; };
 		042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D611BA78E7800C85862 /* Dispensary.swift */; };
 		042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C2D631BA7A27900C85862 /* DispensaryCell.swift */; };
 		0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2961BA6CC3B00061792 /* AppDelegate.swift */; };
@@ -18,10 +22,9 @@
 		0455E2A11BA6CC3B00061792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0455E29F1BA6CC3B00061792 /* LaunchScreen.storyboard */; };
 		0455E2AC1BA6CC3C00061792 /* nav_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2AB1BA6CC3C00061792 /* nav_testTests.swift */; };
 		0455E2B71BA6CC3C00061792 /* nav_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2B61BA6CC3C00061792 /* nav_testUITests.swift */; };
-		048FDE8A1BA9170100E777FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDE891BA9170100E777FB /* MapViewController.swift */; };
 		04A60EDC1BA7185C0068715E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A60EDB1BA7185C0068715E /* SignInViewController.swift */; };
 		04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */; };
-		5F388BA6A5917C9B21685D0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A360BC093B7E56E4FE2C412 /* libPods.a */; };
+		93248C2B232CC115939D27E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB1607794B1D719ED044092 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		0340E69312202D1ABDFF8D28 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		040363151BAA092D00740C3A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		040363171BAA0A1B00740C3A /* StrainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrainCell.swift; sourceTree = "<group>"; };
+		04276F941BAB5FFC00B605FD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		04276F961BAB67C400B605FD /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		04276F981BABD00900B605FD /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		04276F9A1BABD54B00B605FD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../../../Downloads/MapViewController.swift; sourceTree = "<group>"; };
 		042C2D611BA78E7800C85862 /* Dispensary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispensary.swift; sourceTree = "<group>"; };
 		042C2D631BA7A27900C85862 /* DispensaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispensaryCell.swift; sourceTree = "<group>"; };
 		0455E2931BA6CC3B00061792 /* nav_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nav_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +67,9 @@
 		0455E2B21BA6CC3C00061792 /* nav_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nav_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0455E2B61BA6CC3C00061792 /* nav_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nav_testUITests.swift; sourceTree = "<group>"; };
 		0455E2B81BA6CC3C00061792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		048FDE891BA9170100E777FB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		04A60EDB1BA7185C0068715E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispensariesViewController.swift; sourceTree = "<group>"; };
-		1A360BC093B7E56E4FE2C412 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB1607794B1D719ED044092 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23F0E4AF592D6F5CC5A3B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F388BA6A5917C9B21685D0C /* libPods.a in Frameworks */,
+				93248C2B232CC115939D27E3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,15 +127,18 @@
 				0455E29D1BA6CC3B00061792 /* Assets.xcassets */,
 				0455E29A1BA6CC3B00061792 /* Main.storyboard */,
 				0455E29F1BA6CC3B00061792 /* LaunchScreen.storyboard */,
+				04276F941BAB5FFC00B605FD /* SwiftyJSON.swift */,
 				0455E2961BA6CC3B00061792 /* AppDelegate.swift */,
 				04A60EDB1BA7185C0068715E /* SignInViewController.swift */,
 				0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */,
-				048FDE891BA9170100E777FB /* MapViewController.swift */,
+				04276F9A1BABD54B00B605FD /* MapViewController.swift */,
 				04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */,
 				040363151BAA092D00740C3A /* MenuViewController.swift */,
 				040363171BAA0A1B00740C3A /* StrainCell.swift */,
 				042C2D631BA7A27900C85862 /* DispensaryCell.swift */,
 				042C2D611BA78E7800C85862 /* Dispensary.swift */,
+				04276F961BAB67C400B605FD /* Menu.swift */,
+				04276F981BABD00900B605FD /* ProductViewController.swift */,
 				0455E2A21BA6CC3B00061792 /* Info.plist */,
 			);
 			path = nav_test;
@@ -156,7 +165,7 @@
 		74059BE0BB60ACD2E819B57C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A360BC093B7E56E4FE2C412 /* libPods.a */,
+				8AB1607794B1D719ED044092 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 				0455E2901BA6CC3B00061792 /* Frameworks */,
 				0455E2911BA6CC3B00061792 /* Resources */,
 				A0E045F926DF033644B78B03 /* Copy Pods Resources */,
+				AF1399F2E8818A9E4290C212 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,7 +250,7 @@
 				TargetAttributes = {
 					0455E2921BA6CC3B00061792 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = ZYEHCDLV75;
+						DevelopmentTeam = GKTKN5Z262;
 					};
 					0455E2A61BA6CC3C00061792 = {
 						CreatedOnToolsVersion = 7.0;
@@ -330,6 +340,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AF1399F2E8818A9E4290C212 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -340,12 +365,15 @@
 				040363161BAA092D00740C3A /* MenuViewController.swift in Sources */,
 				04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */,
 				042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */,
+				04276F951BAB5FFC00B605FD /* SwiftyJSON.swift in Sources */,
 				0455E2991BA6CC3B00061792 /* RegistrationViewController.swift in Sources */,
+				04276F971BAB67C400B605FD /* Menu.swift in Sources */,
+				04276F991BABD00900B605FD /* ProductViewController.swift in Sources */,
+				04276F9B1BABD54B00B605FD /* MapViewController.swift in Sources */,
 				0455E2971BA6CC3B00061792 /* AppDelegate.swift in Sources */,
 				040363181BAA0A1B00740C3A /* StrainCell.swift in Sources */,
 				042C2D621BA78E7800C85862 /* Dispensary.swift in Sources */,
 				04A60EDC1BA7185C0068715E /* SignInViewController.swift in Sources */,
-				048FDE8A1BA9170100E777FB /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,11 +518,51 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nav_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.nav-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -506,11 +574,51 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nav_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.nav-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

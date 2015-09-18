@@ -64,7 +64,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate, NSURLSe
         //Still needs validation on iOS and node backend
         
         // this is where I've been changing the scheme to https
-            if let urlToReq = NSURL(string: "http://192.168.1.137:7000/addUser") {
+            if let urlToReq = NSURL(string: "http://192.168.1.140:7000/addUser") {
                 let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
                 request.HTTPMethod = "POST"
                 // Get all info from textfields to send to node server
