@@ -24,7 +24,14 @@
 		0455E2B71BA6CC3C00061792 /* nav_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E2B61BA6CC3C00061792 /* nav_testUITests.swift */; };
 		04A60EDC1BA7185C0068715E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A60EDB1BA7185C0068715E /* SignInViewController.swift */; };
 		04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */; };
+<<<<<<< HEAD
 		93248C2B232CC115939D27E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB1607794B1D719ED044092 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+=======
+		5F388BA6A5917C9B21685D0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A360BC093B7E56E4FE2C412 /* libPods.a */; };
+		9A3B72591BAB6771003C8E11 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B72581BAB6771003C8E11 /* OrderCell.swift */; };
+		9A3B725B1BAB67F7003C8E11 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B725A1BAB67F7003C8E11 /* OrdersViewController.swift */; };
+		9A3B725D1BAB6809003C8E11 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B725C1BAB6809003C8E11 /* SwiftyJSON.swift */; };
+>>>>>>> fa864ceabb579b44682be091f5981de5dfa6b416
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +76,14 @@
 		0455E2B81BA6CC3C00061792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A60EDB1BA7185C0068715E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispensariesViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		8AB1607794B1D719ED044092 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		1A360BC093B7E56E4FE2C412 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3B72581BAB6771003C8E11 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		9A3B725A1BAB67F7003C8E11 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		9A3B725C1BAB6809003C8E11 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+>>>>>>> fa864ceabb579b44682be091f5981de5dfa6b416
 		FF23F0E4AF592D6F5CC5A3B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,14 +140,17 @@
 			children = (
 				0455E29D1BA6CC3B00061792 /* Assets.xcassets */,
 				0455E29A1BA6CC3B00061792 /* Main.storyboard */,
+				9A3B725C1BAB6809003C8E11 /* SwiftyJSON.swift */,
 				0455E29F1BA6CC3B00061792 /* LaunchScreen.storyboard */,
 				04276F941BAB5FFC00B605FD /* SwiftyJSON.swift */,
 				0455E2961BA6CC3B00061792 /* AppDelegate.swift */,
 				04A60EDB1BA7185C0068715E /* SignInViewController.swift */,
+				9A3B72581BAB6771003C8E11 /* OrderCell.swift */,
 				0455E2981BA6CC3B00061792 /* RegistrationViewController.swift */,
 				04276F9A1BABD54B00B605FD /* MapViewController.swift */,
 				04A60EDD1BA73F9C0068715E /* DispensariesViewController.swift */,
 				040363151BAA092D00740C3A /* MenuViewController.swift */,
+				9A3B725A1BAB67F7003C8E11 /* OrdersViewController.swift */,
 				040363171BAA0A1B00740C3A /* StrainCell.swift */,
 				042C2D631BA7A27900C85862 /* DispensaryCell.swift */,
 				042C2D611BA78E7800C85862 /* Dispensary.swift */,
@@ -364,6 +381,9 @@
 			files = (
 				040363161BAA092D00740C3A /* MenuViewController.swift in Sources */,
 				04A60EDE1BA73F9C0068715E /* DispensariesViewController.swift in Sources */,
+				9A3B72591BAB6771003C8E11 /* OrderCell.swift in Sources */,
+				9A3B725D1BAB6809003C8E11 /* SwiftyJSON.swift in Sources */,
+				9A3B725B1BAB67F7003C8E11 /* OrdersViewController.swift in Sources */,
 				042C2D641BA7A27900C85862 /* DispensaryCell.swift in Sources */,
 				04276F951BAB5FFC00B605FD /* SwiftyJSON.swift in Sources */,
 				0455E2991BA6CC3B00061792 /* RegistrationViewController.swift in Sources */,
@@ -518,7 +538,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> fa864ceabb579b44682be091f5981de5dfa6b416
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nav_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -574,7 +597,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+<<<<<<< HEAD
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+>>>>>>> fa864ceabb579b44682be091f5981de5dfa6b416
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nav_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
