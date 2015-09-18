@@ -41,7 +41,6 @@ class OrdersViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("OrderCell") as! OrderCell
-        print("cellsfine")
         let order = orders[indexPath.row]
         let price = prices[indexPath.row]
         cell.strainLabel.text = order
@@ -68,7 +67,6 @@ class OrdersViewController: UIViewController, UITableViewDataSource {
         if let urlToReq = NSURL(string: "http://192.168.1.140:7000/cancelOrder"){
             let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
             request.HTTPMethod = "POST"
-            print("what")
             let bodyData = "id=\(Int(orderId)!)"
             request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
@@ -90,7 +88,6 @@ class OrdersViewController: UIViewController, UITableViewDataSource {
         if let urlToReq = NSURL(string: "http://192.168.1.140:7000/getReservations"){
             let request: NSMutableURLRequest = NSMutableURLRequest(URL: urlToReq)
             request.HTTPMethod = "POST"
-            print("what")
             let bodyData = "id=\(Int(id)!)"
             request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
