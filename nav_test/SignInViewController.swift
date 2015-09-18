@@ -88,22 +88,24 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             //if BOTH are bad
         if emailIsValid == false && passwordIsValid == false {
             let alert = UIAlertController(title: "Login Error", message: "Please enter a valid email and password", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             return alert
             //only EMAIL is bad
         } else if emailIsValid == false {
             let alert = UIAlertController(title: "Login Error", message: "Please enter a valid email", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             return alert
             //only PASSWORD is bad
         } else if passwordIsValid == false {
             let alert = UIAlertController(title: "Login Error", message: "Please enter a valid password. Accepted characters: letters, numbers and underscore Allowed Length: 5-14 characters", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             return alert
 
         }
             return nil
     }
     
-    //text field is checking on "Edit Changed"
+    //text fields are checking on "Edit Changed"
     @IBAction func liveTextFieldValidate(sender: AnyObject) {
         liveColorValidation(emailTextField.text!, password: passTextField.text!)
     }

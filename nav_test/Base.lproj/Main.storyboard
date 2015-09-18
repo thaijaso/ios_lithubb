@@ -22,26 +22,41 @@
                                 <rect key="frame" x="20" y="269" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="Oue-JP-VhH"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHG-1z-Lf6">
                                 <rect key="frame" x="20" y="193" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="F5l-gY-ngx"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJx-e4-ysk">
                                 <rect key="frame" x="20" y="231" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="pJB-IA-VsQ"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirm" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTl-97-fgD">
                                 <rect key="frame" x="20" y="307" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="Rjn-aa-KAo"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C4C-Eh-S0c">
                                 <rect key="frame" x="20" y="155" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="KYQ-u5-EwV"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N9-lU-RvH">
                                 <rect key="frame" x="20" y="28" width="560" height="56"/>
@@ -53,11 +68,17 @@
                                 <state key="normal" title="Lithubb">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hyw-Qz-khn" kind="show" identifier="userAuthenticated" id="m3X-oT-0Vt"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-AU-vC6">
                                 <rect key="frame" x="20" y="117" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="liveTextFieldValidation:" destination="G6R-bM-GhJ" eventType="editingChanged" id="w4B-PP-Kqb"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-Hi-0GI">
                                 <rect key="frame" x="20" y="524" width="560" height="56"/>
@@ -86,7 +107,6 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="G6R-bM-GhJ" eventType="touchUpInside" id="i8P-et-NHM"/>
-                                    <segue destination="hyw-Qz-khn" kind="show" identifier="UserAuthenticated" id="WK0-CQ-q6X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -765,6 +785,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WK0-CQ-q6X"/>
+        <segue reference="m3X-oT-0Vt"/>
     </inferredMetricsTieBreakers>
 </document>
